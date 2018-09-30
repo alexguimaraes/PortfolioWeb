@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    border: 0;
+    padding:0;
+}
+/*Text Home*/
+h2{
+    padding-top: 25%;
+    color: #313233;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+body{
+    font-family: 'LeagueGothic', Tahoma, serif;
+    font-size: larger;
+    text-align: center;
+    background-attachment: fixed;
+    background-image:url("http://cbobook.org/i/km/7/lisbon2.jpg");
+    background-color: hsla(0,0%,100%,0.70);
+    background-blend-mode: overlay;
+    overflow: auto;
+}
+/*FLEXBOX*/
+.Container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+}
+.flex-item{
+    width: 100%;
+}
+
+/*HEADER/FOOTER*/
+/* fixed top para nao mexer com o scroll*/
+header{
+    position:fixed;
+    top:0;
+    width: 100%;
+    background-color:black;
+    color:white;
+}
+/*fixed bottom para nao mexer com o scroll*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+}
+
+
+
+/*PORTFOLIO*/
+h3{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: Black;
+    font-family: inherit;
+}
+
+#conducao, #codigo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*width: 100%;
+    height: auto;*/
+    background-color: lightgrey;
+}
+.cond, .cod{
+    min-width: 10%;
+    margin: 5%;
+    /*padding:3px 15px;*/
+    background-color: cornflowerblue;
+}
+@media screen and (min-width: 650px) {
+    .cond, .cod {
+        width: 10%;
+    }
+}
+.port_coluna {
+    width: 100%;
+    height: auto;
+}
+
+.figcaptionPorfolio{
+    box-sizing: border-box;
+    min-width: 10%;
+    height: auto;
+    font-family: "Verdana", Times, serif;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 700;
+    border: 1px solid blue;
+}
+/*ABOUT*/
+
+
+
+
+/*CONTACTS*/
+.contact{
+    padding-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.imgContact{
+    margin: 5%;
+    width: 200px;
+    height: 250px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact ul li{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*ABOUT*/
+.about{
+    padding-top: 20%;
+}
+.imgAbout{
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 650px) {
+    .about{
+        width: 90%;
+    }
+    .imgContact{
+
+    }
+}
